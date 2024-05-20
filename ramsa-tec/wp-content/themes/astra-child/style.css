@@ -1,0 +1,163 @@
+/* 
+Theme Name:		 Astra Child
+Theme URI:		 http://childtheme-generator.com/
+Description:	 Astra Child is a child theme of Astra, created by ChildTheme-Generator.com
+Author:			 Uno Technology Pvt. Ltd.
+Author URI:		 http://childtheme-generator.com/
+Template:		 astra
+Version:		 1.0.0
+Text Domain:	 astra-child
+*/
+
+
+/*
+    Add your custom styles here
+*/
+
+/* remember to remove these css for furthur development */
+
+span.ast-woo-product-category{
+    display: none !important;
+}
+
+span.price{
+    display: none !important;
+}
+
+span.onsale{
+    display: none !important;
+}
+
+.search-btn svg{
+    width: 25px;
+    height: 25px;
+}
+
+.search-input-group{
+    border: 1px solid #D3D3D3 !important;
+    border-radius: 6px !important;
+}
+
+.search-btn, .shopengine-advanced-search-input{
+    border-radius: 6px !important;
+}
+
+.wl_sort_by_filter select{
+    height: 47px;
+    border: 1px solid #D3D3D3 !important;
+    border-radius: 6px !important;
+}
+
+.woolentorducts-columns-3 ul.products li.product{
+    width: calc(33.33% - 20px) !important;
+}
+
+.product-type-single {
+    margin-right: 45px !important;
+}
+
+.product-type-single.last{
+    margin-right: 0px !important;
+}
+
+.wlchosen{
+    background: #6BCE07;
+    color: #fff;
+}
+
+.woolentor-filter-wrap li a{
+    color: #000;
+    font-family: 'Source Sans Pro';
+    font-size: 20px;
+    padding: 12px 15px !important;
+}
+
+.woolentor-filter-wrap .wlchosen a{
+    color: #fff;
+    line-height: 25px;
+}
+
+.woolentor-filter-wrap ul li.wlchosen > a::before, .woolentor-filter-wrap ul li.wlchosen > a::after{
+    right: -20px;
+    left: auto !important;
+}
+
+span.green{
+    color: #6BCE07;
+}
+
+#wpforms-5977-field_2{
+    font-size: 11px;
+    line-height: 14px;
+    border-radius: 30px;
+    border: 1px solid #D8D7D7;
+    color: #000;
+    background: #fff;
+}
+
+#wpforms-submit-5977{
+    background: #6BCE07;
+    color: #fff;
+    border-radius: 30px;
+    font-size: 10.52px;
+    font-weight: 400;
+    line-height: 13.15px;
+    letter-spacing: 0.5261368155479431px;
+    text-align: left;
+    padding: 10px 20px;
+}
+
+.hfe-nav-menu__layout-vertical.hfe-nav-menu__submenu-arrow.hfe-dropdown{
+    width: 400px;
+    right: 0;
+    left: auto;
+}
+
+
+@media (max-width: 767px) {
+    .woolentorducts-columns-mobile-2 ul.products[class*="columns-"] li.product {
+        width: 100% !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .woolentorducts-columns-tablet-2 ul.products[class*="columns-"] li.product {
+        width: calc(50% - 10px) !important;
+        margin-bottom: 20px;
+        margin-right: 0px !important;
+    }
+
+    .woolentorducts-columns-tablet-2 ul.products[class*="columns-"] li.product:nth-child(2n) {
+        margin-left: 20px !important;
+        margin-bottom: 20px !important;
+        margin-right: 0px !important;
+    }
+
+    .elementor-5752 .elementor-element.elementor-element-187341d.elementor-widget-woolentor-product-archive-addons ul.products li.product:nth-child(2n) {
+        margin-left: 20px;
+        margin-right: 0px !important;
+    }
+}
+
+@media (max-width: 1024px) {
+    .woolentorducts-columns-tablet-2 ul.products[class*="columns-"] li.product {
+        width: calc(50% - 10px) !important;
+        margin-bottom: 20px;
+        margin-right: 0px !important;
+    }
+
+    .woolentorducts-columns-tablet-2 ul.products[class*="columns-"] li.product:nth-child(2n) {
+        margin-left: 20px !important;
+        margin-bottom: 20px !important;
+        margin-right: 0px !important;
+    }
+    .elementor-5752 .elementor-element.elementor-element-187341d.elementor-widget-woolentor-product-archive-addons ul.products li.product:nth-child(2n) {
+        margin-left:20px;
+        margin-bottom: 20px !important;
+        margin-right: 0px !important;
+    }
+}
+
+.woolentor-filter-wrap form.wl_product_search_form{
+    border-radius: 6px;
+}

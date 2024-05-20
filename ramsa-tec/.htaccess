@@ -1,0 +1,25 @@
+
+# BEGIN WordPress
+# The directives (lines) between "BEGIN WordPress" and "END WordPress" are
+# dynamically generated, and should only be modified via WordPress filters.
+# Any changes to the directives between these markers will be overwritten.
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+RewriteBase /
+
+# Check if the query parameter exists for URLs under /shop/
+RewriteCond %{REQUEST_URI} ^/shop [NC]
+RewriteCond %{QUERY_STRING} !^wlfilter=1 [NC]
+
+# If it doesn't exist, replace existing query parameters with ?wlfilter=1
+RewriteRule ^(.*)$ /$1?wlfilter=1 [QSA,L]
+
+RewriteRule ^index\.php$ - [L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress
